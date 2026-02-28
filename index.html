@@ -3,243 +3,222 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="   style.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Foodpanda Clone - Food Delivery in Islamabad</title>
 </head>
 <body>
-    <!-- header Sections -->
-    <section>
-      <header class="header">
-        <div id="logo">
-     <img src="images/ic-rider-icon.svg" alt="logo"     >
+    <!-- Header -->
+    <header class="header">
+        <div class="header__logo">
+            <img src="images/ic-rider-icon.svg" alt="Foodpanda logo">
         </div>
-        <button>SIGN UP TO BE RESTURANT PARTNER</button>
-        <button>SIGN UP FOR A BUSINESS ACCOUNT </button>
-      </header>  
-    </section>
+        <div class="header__buttons">
+            <button>SIGN UP TO BE RESTAURANT PARTNER</button>
+            <button>SIGN UP FOR A BUSINESS ACCOUNT</button>
+        </div>
+    </header>
 
-        <!-- NAV_bar -->
+    <!-- Navigation -->
+    <nav class="nav-bar">
+        <a href="#">Delivery</a>
+        <a href="#">Pick Up</a>
+        <a href="#">Pandamart</a>
+        <a href="#">Shops</a>
+        <a href="#">Caterers</a>
+    </nav>
 
-        <section>
-            <nav class="nav_bar">
-                <a href="#">Delivery</a>
-                <a href="#">Pick Up</a>
-                <a href="#">Pandamart</a>
-                <a href="#">Shops</a>
-                <a href="#">Cateres</a>
-            </nav>
-        </section>
+    <!-- Sidebar + Search Layout -->
+    <div class="page">
+        <aside class="filters">
+            <h2 class="filters__title">Filters</h2>
 
-        <div class="page">
-            <aside class="filters">
-                <h1 class="filters__title">Filters</h1>
+            <p class="filters__section-title">Sort by</p>
+            <label class="filters__row"><input type="radio" name="sort" checked> Relevance</label>
+            <label class="filters__row"><input type="radio" name="sort"> Fastest delivery</label>
+            <label class="filters__row"><input type="radio" name="sort"> Distance</label>
+            <label class="filters__row"><input type="radio" name="sort"> Top rated</label>
 
-                <p class="filters__section-title">Sort by</p>
-                <label class="filters__row"><input type="radio" name="sort" checked> Relevance</label>
-                <label class="filters__row"><input type="radio" name="sort"> Fastest delivery</label>
-                <label class="filters__row"><input type="radio" name="sort"> Distance</label>
-                <label class="filters__row"><input type="radio" name="sort"> Top rated</label>
-
-                <div class="quick-Filters">
-                    <h2 class="filters__section-title">Quick filters</h2>
-                    <div class="filters__chips">
-                        <button type="button" class="chip chip--active">Ratings 4+</button>
-                        <button type="button" class="chip"><span class="chip__icon">🍱</span> Super restaurant</button>
-                    </div>
+            <div class="quick-filters">
+                <h3 class="filters__section-title">Quick filters</h3>
+                <div class="filters__chips">
+                    <button type="button" class="chip chip--active">Ratings 4+</button>
+                    <button type="button" class="chip"><span class="chip__icon">&#127857;</span> Super restaurant</button>
                 </div>
-
-                <h2 class="filters__section-title">Offers</h2>
-                <label class="filters__row"><input type="checkbox"> Free delivery</label>
-                <label class="filters__row"><input type="checkbox"> Accepts vouchers</label>
-                <label class="filters__row"><input type="checkbox"> Deals</label>
-
-
-                <h2 class="filters__section-title">Cuisines</h2>
-                <div class="filters__search">
-                    <input type="text" placeholder="Search for cuisine" aria-label="Search cuisines">
-                </div>
-                <label class="filters__row"><input type="checkbox"> American</label>
-                <label class="filters__row"><input type="checkbox"> BBQ</label>
-                <label class="filters__row"><input type="checkbox"> Beverages</label>
-                <label class="filters__row"><input type="checkbox"> Biryani</label>
-                <label class="filters__row"><input type="checkbox"> Broast</label>
-                <label class="filters__row"><input type="checkbox"> Burgers</label>
-                <label class="filters__row"><input type="checkbox"> Cakes & Bakery</label>
-                <label class="filters__row"><input type="checkbox"> Chinese</label>
-                <label class="filters__row"><input type="checkbox"> Continental</label>
-                <label class="filters__row"><input type="checkbox"> Desserts</label>
-
-            </aside>
-
-            <main class="Search">
-                <input type="text" placeholder="Search for restaurant , Cuisines and dishes" aria-label="Search cuisines">
-            </main>
-        </div>
-
-        <!-- Main content Section -->
-
-        <div class="signup-section">
-            <img src="images/rlp-nc-banner-logo.png" alt="Foodpanada-logo">
-            <h1>Sign Up for free delivery on your first order</h1>
-            <button>Sign Up</button>
-        </div>
-
-        <div class ="Daily Deals">
-            <h1 id = "h1">Your Daily Deals</h1>
-            <img src="/images/download.png" alt="img 1" class ="Daily_Deals_imgs">
-            <img src="/images/desktop_tile_EnDevl.png" alt="img2" class ="Daily_Deals_imgs">
-
-        </div>
-
-        <!-- Cusines sectons  -->
-
-        <section class="cuisines">
-            <h2 class="cuisines__title">Cuisines For You</h2>
-            <div class="cuisines__grid">
-                <figure class="cuisine-card">
-                    <img src="cusines/pizza.webp" alt="Pizza">
-                    <figcaption>Pizza</figcaption>
-                </figure>
-                <figure class="cuisine-card">
-                    <img src="/cusines/briyani.webp" alt="Biryani">
-                    <figcaption>Biryani</figcaption>
-                </figure>
-                <figure class="cuisine-card">
-                    <img src="/cusines/fast food.webp" alt="Fast Food">
-                    <figcaption>Fast Food</figcaption>
-                </figure>
-                <figure class="cuisine-card">
-                    <img src="/cusines/burgrs.webp" alt="Burgers">
-                    <figcaption>Burgers</figcaption>
-                </figure>
-                <figure class="cuisine-card">
-                    <img src="cusines/halwa%20puri.webp" alt="Halwa Puri">
-                    <figcaption>Halwa Puri</figcaption>
-                </figure>
-                <figure class="cuisine-card">
-                    <img src="/cusines/paratha.webp" alt="Paratha">
-                    <figcaption>Paratha</figcaption>
-                </figure>
-                <figure class="cuisine-card">
-                    <img src="/cusines/gulab Jamun.webp" alt="Gulab Jamun">
-                    <figcaption>Gulab Jamun</figcaption>
-                </figure>
-                <figure class="cuisine-card">
-                    <img src="/cusines/chiness.webp" alt="Chinese">
-                    <figcaption>Chinese</figcaption>
-                </figure>
             </div>
-        
-            <section class="kamal">
-                <h2 class="kamal__title">Pepsi kamaaal kravings</h2>
-                    <div class="kamal__grid">
-                        <figure class="kamal-card">
-                            <img src="/kamal cravings sections/Subway.webp" alt="Subway">
-                            <figcaption>Subway - F8</figcaption>
-                        </figure>
-            
-                        <figure class="kamal-card">
-                            <img src="/kamal cravings sections/Broad way piiza.webp" alt="BroadWay pizza ">
-                            <figcaption>BroadWay Pizza</figcaption>
-                        </figure>
-            
-                        <figure class="kamal-card">
-                            <img src="/kamal cravings sections/burger an fries.webp" alt="Ranchers - F11">
-                            <figcaption>Ranchers - F11</figcaption>
-                        </figure>
-            
-                        <figure class="kamal-card">
-                            <img src="/kamal cravings sections/Dominos Pizza.webp" alt="Dominos Pizza ">
-                            <figcaption>Dominos Pizza</figcaption>
-                        </figure>
-            
-                        <figure class="kamal-card">
-                            <img src="/kamal cravings sections/Samsh burger.webp" alt=" SMASH - E/7">
-                            <figcaption>SMASH - E/7</figcaption>
-                        </figure>
-            
-                        <figure class="kamal-card">
-                            <img src="/kamal cravings sections/soft swirl.webp" alt="Soft Swril F10 ">
-                            <figcaption>Soft Swril F10</figcaption>
-                        </figure>
-            
-                    </div>
-                </div>
-            </section>
-            
 
-            <section class="Homechefs">
-                <h2 class="Homechefs_title">Homechefs - khaas discounts</h2>
-                    <div class="Homechefs__grid">
-                        <figure class="Homechefs-card">
-                            <img src="/Homechefs/foods.webp" alt="">
-                            <figcaption>Tawakkal Foods</figcaption>
-                        </figure>
-            
-                        <figure class="Homechefs-card">
-                            <img src="/Homechefs/Quvetta chai.webp" alt="chai">
-                            <figcaption>Quvetta chai</figcaption>
-                        </figure>
-            
-                        <figure class="Homechefs-card">
-                            <img src="/Homechefs/Kalsoom Kitchen.webp" alt="Kalsoom">
-                            <figcaption>Kalsoom Kitchen</figcaption>
-                        </figure>
-            
-                        <figure class="Homechefs-card">
-                            <img src="/Homechefs/miss foodie kitchen.webp" alt="Miss foodie">
-                            <figcaption>Miss Foodie's Kitchen</figcaption>
-                        </figure>
-            
-                        <figure class="Homechefs-card">
-                            <img src="/Homechefs/mummy's kitchen.webp" alt=" mummy">
-                            <figcaption>Mummy's Kitchen</figcaption>
-                        </figure>
-            
-                        <figure class="Homechefs-card">
-                            <img src="/Homechefs/Briyani ka baap.webp" alt="Briyani">
-                            <figcaption>Biryani Ka Baap</figcaption>
-                        </figure>
-            
-                    </div>
+            <h3 class="filters__section-title">Offers</h3>
+            <label class="filters__row"><input type="checkbox"> Free delivery</label>
+            <label class="filters__row"><input type="checkbox"> Accepts vouchers</label>
+            <label class="filters__row"><input type="checkbox"> Deals</label>
+
+            <h3 class="filters__section-title">Cuisines</h3>
+            <div class="filters__search">
+                <input type="text" placeholder="Search for cuisine" aria-label="Search cuisines">
+            </div>
+            <label class="filters__row"><input type="checkbox"> American</label>
+            <label class="filters__row"><input type="checkbox"> BBQ</label>
+            <label class="filters__row"><input type="checkbox"> Beverages</label>
+            <label class="filters__row"><input type="checkbox"> Biryani</label>
+            <label class="filters__row"><input type="checkbox"> Broast</label>
+            <label class="filters__row"><input type="checkbox"> Burgers</label>
+            <label class="filters__row"><input type="checkbox"> Cakes &amp; Bakery</label>
+            <label class="filters__row"><input type="checkbox"> Chinese</label>
+            <label class="filters__row"><input type="checkbox"> Continental</label>
+            <label class="filters__row"><input type="checkbox"> Desserts</label>
+        </aside>
+
+        <main class="main-content">
+            <div class="search-bar">
+                <input type="text" placeholder="Search for restaurant, cuisines and dishes" aria-label="Search restaurants">
+            </div>
+
+            <!-- Signup Banner -->
+            <div class="signup-section">
+                <div class="signup-section__text">
+                    <h2>Sign Up for free delivery on your first order</h2>
+                    <button>Sign Up</button>
+                </div>
+                <img src="images/rlp-nc-banner-logo.png" alt="Foodpanda logo">
+            </div>
+
+            <!-- Daily Deals -->
+            <section class="daily-deals">
+                <h2 class="section-title">Your Daily Deals</h2>
+                <div class="daily-deals__grid">
+                    <img src="images/download.png" alt="Daily deal 1" class="daily-deals__img">
+                    <img src="images/desktop_tile_EnDevl.png" alt="Daily deal 2" class="daily-deals__img">
                 </div>
             </section>
-                
-                 
-            <section class="up_to_30">
-                <h2 class="up_to_30_title">up to 30% off</h2>
-                    <div class="up_to_30__grid">
-                        <figure class="up_to_30-card">
-                            <img src="/up_to_30 off/Suger Craft.webp" alt="">
-                            <figcaption>Suger Craft</figcaption>
-                        </figure>
-            
-                        <figure class="up_to_30-card">
-                            <img src="/up_to_30 off/savoir foo.webp" alt="chai">
-                            <figcaption>Savoir Foods</figcaption>
-                        </figure>
-            
-                        <figure class="up_to_30-card">
-                            <img src="/up_to_30 off/darbar resturant.webp" alt="">
-                            <figcaption>Darbar restaurant</figcaption>
-                        </figure>
-            
-                        <figure class="up_to_30-card">
-                            <img src="/up_to_30 off/KababJeez Frie Chiken.webp" alt="">
-                            <figcaption>KababJeez Fried Chiken</figcaption>
-                        </figure>
-            
-                        <figure class="up_to_30-card">
-                            <img src="/up_to_30 off/Urban Dhaba.webp" alt=" ">
-                            <figcaption>Urban Dhaba</figcaption>
-                        </figure>
-            
-                        <figure class="up_to_30-card">
-                            <img src="/up_to_30 off/red apple.webp" alt="">
-                            <figcaption> Red Apple</figcaption>
-                        </figure>
-            
-                    </div>
+
+            <!-- Cuisines -->
+            <section class="cuisines">
+                <h2 class="section-title">Cuisines For You</h2>
+                <div class="cuisines__grid">
+                    <figure class="cuisine-card">
+                        <img src="cusines/pizza.webp" alt="Pizza">
+                        <figcaption>Pizza</figcaption>
+                    </figure>
+                    <figure class="cuisine-card">
+                        <img src="cusines/briyani.webp" alt="Biryani">
+                        <figcaption>Biryani</figcaption>
+                    </figure>
+                    <figure class="cuisine-card">
+                        <img src="cusines/fast%20food.webp" alt="Fast Food">
+                        <figcaption>Fast Food</figcaption>
+                    </figure>
+                    <figure class="cuisine-card">
+                        <img src="cusines/burgrs.webp" alt="Burgers">
+                        <figcaption>Burgers</figcaption>
+                    </figure>
+                    <figure class="cuisine-card">
+                        <img src="cusines/halwa%20puri.webp" alt="Halwa Puri">
+                        <figcaption>Halwa Puri</figcaption>
+                    </figure>
+                    <figure class="cuisine-card">
+                        <img src="cusines/paratha.webp" alt="Paratha">
+                        <figcaption>Paratha</figcaption>
+                    </figure>
+                    <figure class="cuisine-card">
+                        <img src="cusines/gulab%20Jamun.webp" alt="Gulab Jamun">
+                        <figcaption>Gulab Jamun</figcaption>
+                    </figure>
+                    <figure class="cuisine-card">
+                        <img src="cusines/chiness.webp" alt="Chinese">
+                        <figcaption>Chinese</figcaption>
+                    </figure>
+                </div>
+            </section>
+
+            <!-- Pepsi Kamal Cravings -->
+            <section class="kamal">
+                <h2 class="section-title">Pepsi Kamaaal Kravings</h2>
+                <div class="card-grid">
+                    <figure class="card">
+                        <img src="kamal%20cravings%20sections/Subway.webp" alt="Subway">
+                        <figcaption>Subway - F8</figcaption>
+                    </figure>
+                    <figure class="card">
+                        <img src="kamal%20cravings%20sections/Broad%20way%20piiza.webp" alt="BroadWay Pizza">
+                        <figcaption>BroadWay Pizza</figcaption>
+                    </figure>
+                    <figure class="card">
+                        <img src="kamal%20cravings%20sections/burger%20an%20fries.webp" alt="Ranchers - F11">
+                        <figcaption>Ranchers - F11</figcaption>
+                    </figure>
+                    <figure class="card">
+                        <img src="kamal%20cravings%20sections/Dominos%20Pizza.webp" alt="Dominos Pizza">
+                        <figcaption>Dominos Pizza</figcaption>
+                    </figure>
+                    <figure class="card">
+                        <img src="kamal%20cravings%20sections/Samsh%20burger.webp" alt="SMASH - E/7">
+                        <figcaption>SMASH - E/7</figcaption>
+                    </figure>
+                    <figure class="card">
+                        <img src="kamal%20cravings%20sections/soft%20swirl.webp" alt="Soft Swirl F10">
+                        <figcaption>Soft Swirl F10</figcaption>
+                    </figure>
+                </div>
+            </section>
+
+            <!-- Homechefs -->
+            <section class="homechefs">
+                <h2 class="section-title">Homechefs - Khaas Discounts</h2>
+                <div class="card-grid">
+                    <figure class="card">
+                        <img src="Homechefs/foods.webp" alt="Tawakkal Foods">
+                        <figcaption>Tawakkal Foods</figcaption>
+                    </figure>
+                    <figure class="card">
+                        <img src="Homechefs/Quvetta%20chai.webp" alt="Quvetta Chai">
+                        <figcaption>Quvetta Chai</figcaption>
+                    </figure>
+                    <figure class="card">
+                        <img src="Homechefs/Kalsoom%20Kitchen.webp" alt="Kalsoom Kitchen">
+                        <figcaption>Kalsoom Kitchen</figcaption>
+                    </figure>
+                    <figure class="card">
+                        <img src="Homechefs/miss%20foodie%20kitchen.webp" alt="Miss Foodie's Kitchen">
+                        <figcaption>Miss Foodie's Kitchen</figcaption>
+                    </figure>
+                    <figure class="card">
+                        <img src="Homechefs/mummy's%20kitchen.webp" alt="Mummy's Kitchen">
+                        <figcaption>Mummy's Kitchen</figcaption>
+                    </figure>
+                    <figure class="card">
+                        <img src="Homechefs/Briyani%20ka%20baap.webp" alt="Biryani Ka Baap">
+                        <figcaption>Biryani Ka Baap</figcaption>
+                    </figure>
+                </div>
+            </section>
+
+            <!-- Up to 30% Off -->
+            <section class="deals-30">
+                <h2 class="section-title">Up to 30% Off</h2>
+                <div class="card-grid">
+                    <figure class="card">
+                        <img src="up_to_30%20off/Suger%20Craft.webp" alt="Sugar Craft">
+                        <figcaption>Sugar Craft</figcaption>
+                    </figure>
+                    <figure class="card">
+                        <img src="up_to_30%20off/savoir%20foo.webp" alt="Savoir Foods">
+                        <figcaption>Savoir Foods</figcaption>
+                    </figure>
+                    <figure class="card">
+                        <img src="up_to_30%20off/darbar%20resturant.webp" alt="Darbar Restaurant">
+                        <figcaption>Darbar Restaurant</figcaption>
+                    </figure>
+                    <figure class="card">
+                        <img src="up_to_30%20off/KababJeez%20Frie%20Chiken.webp" alt="KababJeez Fried Chicken">
+                        <figcaption>KababJeez Fried Chicken</figcaption>
+                    </figure>
+                    <figure class="card">
+                        <img src="up_to_30%20off/Urban%20Dhaba.webp" alt="Urban Dhaba">
+                        <figcaption>Urban Dhaba</figcaption>
+                    </figure>
+                    <figure class="card">
+                        <img src="up_to_30%20off/red%20apple.webp" alt="Red Apple">
+                        <figcaption>Red Apple</figcaption>
+                    </figure>
                 </div>
             </section>
 
@@ -277,157 +256,153 @@
                     <p class="content-text">This Ramzan, foodpanda offers special deals and discounts on sehri and iftari meals. Enjoy free delivery and exclusive offers from your favorite restaurants. Whether you're looking for traditional iftari items like pakoras, samosas, and dates, or hearty sehri meals to start your day, foodpanda has you covered with the best Ramzan deals in Islamabad.</p>
                 </div>
             </section>
+        </main>
+    </div>
 
-        <!-- Footer Section -->
-        <footer class="footer">
-            <!-- Top Section: Food Delivery Categories -->
-            <div class="footer-top">
-                <div class="footer-categories">
-                    <div class="footer-column">
-                        <h4 class="footer-heading">AMERICAN FOOD DELIVERY IN ISLAMABAD</h4>
-                        <ul class="footer-links">
-                            <li><a href="#">McDonald's</a></li>
-                            <li><a href="#">KFC</a></li>
-                            <li><a href="#">OPTP - Jinnah Super</a></li>
-                            <li><a href="#">Subway</a></li>
-                            <li><a href="#">Cinnabon - Centaurus</a></li>
-                            <li><a href="#">American Steak House</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-column">
-                        <h4 class="footer-heading">PIZZA DELIVERY IN ISLAMABAD</h4>
-                        <ul class="footer-links">
-                            <li><a href="#">Pizza Hut - Islamabad</a></li>
-                            <li><a href="#">New Yorker Pizza - Islamabad</a></li>
-                            <li><a href="#">14th Street Pizza Co.</a></li>
-                            <li><a href="#">Domino's Pizza</a></li>
-                            <li><a href="#">Tomatino Pizza Fiesta</a></li>
-                            <li><a href="#">Round House Pizza</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-column">
-                        <h4 class="footer-heading">PAKISTANI FOOD DELIVERY IN ISLAMABAD</h4>
-                        <ul class="footer-links">
-                            <li><a href="#">Chattha's</a></li>
-                            <li><a href="#">Gulshan Roll Inn & Fried Chicken</a></li>
-                            <li><a href="#">Desi Bites</a></li>
-                            <li><a href="#">Erum's Kitchen</a></li>
-                            <li><a href="#">Cheema & Chattha Restaurant</a></li>
-                            <li><a href="#">Spicy Neandoos Murgh Pulao & Restaurant</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-column">
-                        <h4 class="footer-heading">BURGER DELIVERY IN ISLAMABAD</h4>
-                        <ul class="footer-links">
-                            <li><a href="#">Char Grill Central</a></li>
-                            <li><a href="#">Kins Crunchy Chicken</a></li>
-                            <li><a href="#">The Burger Company - Islamabad</a></li>
-                            <li><a href="#">5 Star Pizza & Burger Hut</a></li>
-                            <li><a href="#">Burgers Etc.</a></li>
-                            <li><a href="#">Burger Oye</a></li>
-                        </ul>
-                    </div>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="footer-categories">
+                <div class="footer-column">
+                    <h4 class="footer-heading">American Food Delivery in Islamabad</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">McDonald's</a></li>
+                        <li><a href="#">KFC</a></li>
+                        <li><a href="#">OPTP - Jinnah Super</a></li>
+                        <li><a href="#">Subway</a></li>
+                        <li><a href="#">Cinnabon - Centaurus</a></li>
+                        <li><a href="#">American Steak House</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4 class="footer-heading">Pizza Delivery in Islamabad</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Pizza Hut - Islamabad</a></li>
+                        <li><a href="#">New Yorker Pizza - Islamabad</a></li>
+                        <li><a href="#">14th Street Pizza Co.</a></li>
+                        <li><a href="#">Domino's Pizza</a></li>
+                        <li><a href="#">Tomatino Pizza Fiesta</a></li>
+                        <li><a href="#">Round House Pizza</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4 class="footer-heading">Pakistani Food Delivery in Islamabad</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Chattha's</a></li>
+                        <li><a href="#">Gulshan Roll Inn &amp; Fried Chicken</a></li>
+                        <li><a href="#">Desi Bites</a></li>
+                        <li><a href="#">Erum's Kitchen</a></li>
+                        <li><a href="#">Cheema &amp; Chattha Restaurant</a></li>
+                        <li><a href="#">Spicy Neandoos Murgh Pulao &amp; Restaurant</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4 class="footer-heading">Burger Delivery in Islamabad</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Char Grill Central</a></li>
+                        <li><a href="#">Kins Crunchy Chicken</a></li>
+                        <li><a href="#">The Burger Company - Islamabad</a></li>
+                        <li><a href="#">5 Star Pizza &amp; Burger Hut</a></li>
+                        <li><a href="#">Burgers Etc.</a></li>
+                        <li><a href="#">Burger Oye</a></li>
+                    </ul>
                 </div>
             </div>
+        </div>
 
-            <!-- Middle Section: More Categories and Countries -->
-            <div class="footer-middle">
-                <div class="footer-categories">
-                    <div class="footer-column">
-                        <h4 class="footer-heading">FAST FOOD DELIVERY IN ISLAMABAD</h4>
-                        <ul class="footer-links">
-                            <li><a href="#">Street 1 Cafe</a></li>
-                            <li><a href="#">Hardees</a></li>
-                            <li><a href="#">District 6</a></li>
-                            <li><a href="#">Juicy Gossip</a></li>
-                            <li><a href="#">Mr. COD - Banni Galla</a></li>
-                            <li><a href="#">Crunchies (Safa Gold)</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-column">
-                        <h4 class="footer-heading">CHINESE DELIVERY IN ISLAMABAD</h4>
-                        <ul class="footer-links">
-                            <li><a href="#">Tiger Temple</a></li>
-                            <li><a href="#">Ha' pi</a></li>
-                            <li><a href="#">Kim Mun Chinese - Safa Gold Mall</a></li>
-                            <li><a href="#">Golden Dragon</a></li>
-                            <li><a href="#">Dragon City</a></li>
-                            <li><a href="#">Cock 'N' Bull</a></li>
-                        </ul>
-                    </div>
+        <div class="footer-middle">
+            <div class="footer-categories">
+                <div class="footer-column">
+                    <h4 class="footer-heading">Fast Food Delivery in Islamabad</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Street 1 Cafe</a></li>
+                        <li><a href="#">Hardees</a></li>
+                        <li><a href="#">District 6</a></li>
+                        <li><a href="#">Juicy Gossip</a></li>
+                        <li><a href="#">Mr. COD - Banni Galla</a></li>
+                        <li><a href="#">Crunchies (Safa Gold)</a></li>
+                    </ul>
                 </div>
-                <div class="footer-countries">
-                    <a href="#">Bulgaria</a>
-                    <span class="footer-divider">|</span>
-                    <a href="#">Romania</a>
-                    <span class="footer-divider">|</span>
-                    <a href="#">Hong Kong</a>
-                    <span class="footer-divider">|</span>
-                    <a href="#">Bangladesh</a>
-                    <span class="footer-divider">|</span>
-                    <a href="#">Singapore</a>
-                    <span class="footer-divider">|</span>
-                    <a href="#">Malaysia</a>
-                    <span class="footer-divider">|</span>
-                    <a href="#">Philippines</a>
-                    <span class="footer-divider">|</span>
-                    <a href="#">Thailand</a>
-                    <span class="footer-divider">|</span>
-                    <a href="#">Taiwan</a>
+                <div class="footer-column">
+                    <h4 class="footer-heading">Chinese Delivery in Islamabad</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Tiger Temple</a></li>
+                        <li><a href="#">Ha' pi</a></li>
+                        <li><a href="#">Kim Mun Chinese - Safa Gold Mall</a></li>
+                        <li><a href="#">Golden Dragon</a></li>
+                        <li><a href="#">Dragon City</a></li>
+                        <li><a href="#">Cock 'N' Bull</a></li>
+                    </ul>
                 </div>
             </div>
+            <div class="footer-countries">
+                <a href="#">Bulgaria</a>
+                <span class="footer-divider">|</span>
+                <a href="#">Romania</a>
+                <span class="footer-divider">|</span>
+                <a href="#">Hong Kong</a>
+                <span class="footer-divider">|</span>
+                <a href="#">Bangladesh</a>
+                <span class="footer-divider">|</span>
+                <a href="#">Singapore</a>
+                <span class="footer-divider">|</span>
+                <a href="#">Malaysia</a>
+                <span class="footer-divider">|</span>
+                <a href="#">Philippines</a>
+                <span class="footer-divider">|</span>
+                <a href="#">Thailand</a>
+                <span class="footer-divider">|</span>
+                <a href="#">Taiwan</a>
+            </div>
+        </div>
 
-            <!-- Bottom Section: General Information -->
-            <div class="footer-bottom">
-                <div class="footer-info">
-                    <div class="footer-info-column">
-                        <p class="footer-copyright">© foodpanda</p>
-                        <ul class="footer-links">
-                            <li><a href="#">Press</a></li>
-                            <li><a href="#">pandapay Terms and Conditions</a></li>
-                            <li><a href="#">Security</a></li>
-                            <li><a href="#">Careers</a></li>
-                            <li><a href="#">Cashback Terms and Conditions</a></li>
-                            <li><a href="#">Partner with Us</a></li>
-                            <li><a href="#">All cities</a></li>
-                            <li><a href="#">pandapro - Monthly Subscription Programme</a></li>
-                            <li><a href="#">Ramzan deals</a></li>
-                            <li><a href="#">Areas delivered in Lahore</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-info-column">
-                        <h4 class="footer-info-heading">Help Center</h4>
-                        <ul class="footer-links">
-                            <li><a href="#">Terms and Conditions</a></li>
-                            <li><a href="#">Download foodpanda Apps</a></li>
-                            <li><a href="#">Suggest a Restaurant</a></li>
-                            <li><a href="#">All cuisines</a></li>
-                            <li><a href="#">pandago - Request a Rider</a></li>
-                            <li><a href="#">Update on COVID-19 in Pakistan</a></li>
-                            <li><a href="#">foodpanda Home Chef</a></li>
-                            <li><a href="#">Areas delivered in Karachi</a></li>
-                            <li><a href="#">Areas delivered in Islamabad</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-info-column">
-                        <ul class="footer-links">
-                            <li><a href="#">Refunds with pandapay</a></li>
-                            <li><a href="#">Privacy policy</a></li>
-                            <li><a href="#">Human rights policy</a></li>
-                            <li><a href="#">Corporate Customer</a></li>
-                            <li><a href="#">foodpanda Magazine</a></li>
-                            <li><a href="#">foodpanda Vouchers & Coupons</a></li>
-                            <li><a href="#">pandamart Grocery Delivery</a></li>
-                            <li><a href="#">Become an Affiliate</a></li>
-                            <li><a href="#">Areas delivered in Gujranwala</a></li>
-                            <li><a href="#">Areas delivered in Peshawar</a></li>
-                        </ul>
-                    </div>
+        <div class="footer-bottom">
+            <div class="footer-info">
+                <div class="footer-info-column">
+                    <p class="footer-copyright">&copy; foodpanda</p>
+                    <ul class="footer-links">
+                        <li><a href="#">Press</a></li>
+                        <li><a href="#">pandapay Terms and Conditions</a></li>
+                        <li><a href="#">Security</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Cashback Terms and Conditions</a></li>
+                        <li><a href="#">Partner with Us</a></li>
+                        <li><a href="#">All cities</a></li>
+                        <li><a href="#">pandapro - Monthly Subscription Programme</a></li>
+                        <li><a href="#">Ramzan deals</a></li>
+                        <li><a href="#">Areas delivered in Lahore</a></li>
+                    </ul>
+                </div>
+                <div class="footer-info-column">
+                    <h4 class="footer-info-heading">Help Center</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Terms and Conditions</a></li>
+                        <li><a href="#">Download foodpanda Apps</a></li>
+                        <li><a href="#">Suggest a Restaurant</a></li>
+                        <li><a href="#">All cuisines</a></li>
+                        <li><a href="#">pandago - Request a Rider</a></li>
+                        <li><a href="#">Update on COVID-19 in Pakistan</a></li>
+                        <li><a href="#">foodpanda Home Chef</a></li>
+                        <li><a href="#">Areas delivered in Karachi</a></li>
+                        <li><a href="#">Areas delivered in Islamabad</a></li>
+                    </ul>
+                </div>
+                <div class="footer-info-column">
+                    <ul class="footer-links">
+                        <li><a href="#">Refunds with pandapay</a></li>
+                        <li><a href="#">Privacy policy</a></li>
+                        <li><a href="#">Human rights policy</a></li>
+                        <li><a href="#">Corporate Customer</a></li>
+                        <li><a href="#">foodpanda Magazine</a></li>
+                        <li><a href="#">foodpanda Vouchers &amp; Coupons</a></li>
+                        <li><a href="#">pandamart Grocery Delivery</a></li>
+                        <li><a href="#">Become an Affiliate</a></li>
+                        <li><a href="#">Areas delivered in Gujranwala</a></li>
+                        <li><a href="#">Areas delivered in Peshawar</a></li>
+                    </ul>
                 </div>
             </div>
-        </footer>
-                
- 
+        </div>
+    </footer>
 </body>
-    </html>     
-
+</html>
